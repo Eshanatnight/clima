@@ -3,16 +3,17 @@
 public partial class MainPage : ContentPage
 {
 	RestService _restService;
-
 	public MainPage()
 	{
 		InitializeComponent();
 		_restService = new RestService();
+
 	}
 
 	async void OnGetWeatherButtonClicked(object sender,EventArgs e) {
 		if (!string.IsNullOrWhiteSpace(_cityEntry.Text)) {
-			WeatherData weatherData = await 
+
+			WeatherData weatherData = await
 				_restService.
 				GetWeatherData(GenerateRequestURL(Constants.OpenWeatherMapEndpoint));
 

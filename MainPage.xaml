@@ -86,11 +86,7 @@
                 HorizontalOptions="Center"
                 Text="{Binding Weather[0].Description}"
                 TextColor="White" />
-            <Label
-                FontSize="12"
-                HorizontalOptions="Center"
-                Text="June 15,10:00AM"
-                TextColor="White" />
+
         </StackLayout>
 
         <Frame
@@ -244,7 +240,7 @@
                 BackgroundColor="#7c58c9"
                 CharacterSpacing="7"
                 HorizontalTextAlignment="Center"
-                Text="Karachi"
+                Text="Kolkata"
                 TextColor="White"
                 VerticalOptions="Center"
                 WidthRequest="250" />
